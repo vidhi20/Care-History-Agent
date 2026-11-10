@@ -1,0 +1,27 @@
+{
+  "runner": "keyword_baseline",
+  "notes": 50,
+  "symptom_extraction": {
+    "precision": 1.0,
+    "recall": 0.88,
+    "f1": 0.936
+  },
+  "new_change_detection": {
+    "precision": 0.906,
+    "recall": 0.879,
+    "f1": 0.892
+  },
+  "fully_correct_notes": 39,
+  "per_category_f1": {
+    "memory_loss": 0.769,
+    "confusion": 0.889,
+    "agitation": 1.0,
+    "sleep_disturbance": 1.0,
+    "wandering": 1.0,
+    "appetite_change": 1.0,
+    "falls": 1.0,
+    "mood_depression": 0.889,
+    "hallucinations": 0.8,
+    "communication": 1.0
+  }
+}

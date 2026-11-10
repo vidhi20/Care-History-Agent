@@ -1,0 +1,487 @@
+[
+  {
+    "note_id": "P001-W1",
+    "predicted": [
+      "confusion"
+    ],
+    "gold": [
+      "confusion"
+    ]
+  },
+  {
+    "note_id": "P001-W2",
+    "predicted": [],
+    "gold": [
+      "confusion"
+    ]
+  },
+  {
+    "note_id": "P001-W3",
+    "predicted": [],
+    "gold": []
+  },
+  {
+    "note_id": "P001-W4",
+    "predicted": [
+      "appetite_change",
+      "confusion",
+      "memory_loss"
+    ],
+    "gold": [
+      "appetite_change",
+      "confusion",
+      "memory_loss"
+    ]
+  },
+  {
+    "note_id": "P001-W5",
+    "predicted": [],
+    "gold": []
+  },
+  {
+    "note_id": "P002-W1",
+    "predicted": [
+      "hallucinations",
+      "wandering"
+    ],
+    "gold": [
+      "hallucinations",
+      "wandering"
+    ]
+  },
+  {
+    "note_id": "P002-W2",
+    "predicted": [
+      "appetite_change",
+      "wandering"
+    ],
+    "gold": [
+      "appetite_change",
+      "hallucinations",
+      "wandering"
+    ]
+  },
+  {
+    "note_id": "P002-W3",
+    "predicted": [
+      "hallucinations",
+      "wandering"
+    ],
+    "gold": [
+      "hallucinations",
+      "wandering"
+    ]
+  },
+  {
+    "note_id": "P002-W4",
+    "predicted": [],
+    "gold": []
+  },
+  {
+    "note_id": "P002-W5",
+    "predicted": [
+      "mood_depression",
+      "wandering"
+    ],
+    "gold": [
+      "mood_depression",
+      "wandering"
+    ]
+  },
+  {
+    "note_id": "P003-W1",
+    "predicted": [
+      "communication",
+      "falls"
+    ],
+    "gold": [
+      "communication",
+      "falls"
+    ]
+  },
+  {
+    "note_id": "P003-W2",
+    "predicted": [
+      "falls"
+    ],
+    "gold": [
+      "falls"
+    ]
+  },
+  {
+    "note_id": "P003-W3",
+    "predicted": [],
+    "gold": []
+  },
+  {
+    "note_id": "P003-W4",
+    "predicted": [
+      "communication",
+      "falls",
+      "wandering"
+    ],
+    "gold": [
+      "communication",
+      "falls",
+      "wandering"
+    ]
+  },
+  {
+    "note_id": "P003-W5",
+    "predicted": [
+      "appetite_change",
+      "communication",
+      "falls"
+    ],
+    "gold": [
+      "appetite_change",
+      "communication",
+      "falls"
+    ]
+  },
+  {
+    "note_id": "P004-W1",
+    "predicted": [
+      "hallucinations"
+    ],
+    "gold": [
+      "hallucinations"
+    ]
+  },
+  {
+    "note_id": "P004-W2",
+    "predicted": [
+      "hallucinations"
+    ],
+    "gold": [
+      "confusion",
+      "hallucinations"
+    ]
+  },
+  {
+    "note_id": "P004-W3",
+    "predicted": [],
+    "gold": []
+  },
+  {
+    "note_id": "P004-W4",
+    "predicted": [],
+    "gold": []
+  },
+  {
+    "note_id": "P004-W5",
+    "predicted": [
+      "confusion"
+    ],
+    "gold": [
+      "confusion"
+    ]
+  },
+  {
+    "note_id": "P005-W1",
+    "predicted": [
+      "sleep_disturbance"
+    ],
+    "gold": [
+      "mood_depression",
+      "sleep_disturbance"
+    ]
+  },
+  {
+    "note_id": "P005-W2",
+    "predicted": [
+      "mood_depression",
+      "sleep_disturbance"
+    ],
+    "gold": [
+      "memory_loss",
+      "mood_depression",
+      "sleep_disturbance"
+    ]
+  },
+  {
+    "note_id": "P005-W3",
+    "predicted": [
+      "mood_depression",
+      "sleep_disturbance"
+    ],
+    "gold": [
+      "mood_depression",
+      "sleep_disturbance"
+    ]
+  },
+  {
+    "note_id": "P005-W4",
+    "predicted": [
+      "sleep_disturbance"
+    ],
+    "gold": [
+      "sleep_disturbance"
+    ]
+  },
+  {
+    "note_id": "P005-W5",
+    "predicted": [],
+    "gold": []
+  },
+  {
+    "note_id": "P006-W1",
+    "predicted": [
+      "falls",
+      "sleep_disturbance",
+      "wandering"
+    ],
+    "gold": [
+      "falls",
+      "sleep_disturbance",
+      "wandering"
+    ]
+  },
+  {
+    "note_id": "P006-W2",
+    "predicted": [],
+    "gold": []
+  },
+  {
+    "note_id": "P006-W3",
+    "predicted": [],
+    "gold": []
+  },
+  {
+    "note_id": "P006-W4",
+    "predicted": [
+      "falls",
+      "wandering"
+    ],
+    "gold": [
+      "falls",
+      "wandering"
+    ]
+  },
+  {
+    "note_id": "P006-W5",
+    "predicted": [
+      "falls",
+      "wandering"
+    ],
+    "gold": [
+      "falls",
+      "wandering"
+    ]
+  },
+  {
+    "note_id": "P007-W1",
+    "predicted": [
+      "confusion",
+      "hallucinations"
+    ],
+    "gold": [
+      "confusion",
+      "hallucinations"
+    ]
+  },
+  {
+    "note_id": "P007-W2",
+    "predicted": [
+      "confusion",
+      "hallucinations"
+    ],
+    "gold": [
+      "confusion",
+      "hallucinations"
+    ]
+  },
+  {
+    "note_id": "P007-W3",
+    "predicted": [
+      "confusion"
+    ],
+    "gold": [
+      "confusion",
+      "hallucinations"
+    ]
+  },
+  {
+    "note_id": "P007-W4",
+    "predicted": [
+      "agitation",
+      "confusion"
+    ],
+    "gold": [
+      "agitation",
+      "confusion",
+      "hallucinations"
+    ]
+  },
+  {
+    "note_id": "P007-W5",
+    "predicted": [
+      "confusion",
+      "hallucinations"
+    ],
+    "gold": [
+      "confusion",
+      "hallucinations"
+    ]
+  },
+  {
+    "note_id": "P008-W1",
+    "predicted": [
+      "hallucinations"
+    ],
+    "gold": [
+      "hallucinations",
+      "memory_loss"
+    ]
+  },
+  {
+    "note_id": "P008-W2",
+    "predicted": [
+      "appetite_change",
+      "memory_loss"
+    ],
+    "gold": [
+      "appetite_change",
+      "memory_loss"
+    ]
+  },
+  {
+    "note_id": "P008-W3",
+    "predicted": [
+      "appetite_change",
+      "memory_loss",
+      "mood_depression"
+    ],
+    "gold": [
+      "appetite_change",
+      "memory_loss",
+      "mood_depression"
+    ]
+  },
+  {
+    "note_id": "P008-W4",
+    "predicted": [
+      "appetite_change"
+    ],
+    "gold": [
+      "appetite_change",
+      "hallucinations",
+      "memory_loss"
+    ]
+  },
+  {
+    "note_id": "P008-W5",
+    "predicted": [],
+    "gold": []
+  },
+  {
+    "note_id": "P009-W1",
+    "predicted": [
+      "appetite_change",
+      "communication"
+    ],
+    "gold": [
+      "appetite_change",
+      "communication"
+    ]
+  },
+  {
+    "note_id": "P009-W2",
+    "predicted": [
+      "appetite_change",
+      "communication"
+    ],
+    "gold": [
+      "appetite_change",
+      "communication"
+    ]
+  },
+  {
+    "note_id": "P009-W3",
+    "predicted": [
+      "appetite_change",
+      "communication"
+    ],
+    "gold": [
+      "appetite_change",
+      "communication"
+    ]
+  },
+  {
+    "note_id": "P009-W4",
+    "predicted": [
+      "appetite_change",
+      "communication",
+      "falls"
+    ],
+    "gold": [
+      "appetite_change",
+      "communication",
+      "falls"
+    ]
+  },
+  {
+    "note_id": "P009-W5",
+    "predicted": [
+      "appetite_change",
+      "communication"
+    ],
+    "gold": [
+      "appetite_change",
+      "communication"
+    ]
+  },
+  {
+    "note_id": "P010-W1",
+    "predicted": [
+      "communication",
+      "memory_loss",
+      "sleep_disturbance"
+    ],
+    "gold": [
+      "communication",
+      "memory_loss",
+      "sleep_disturbance"
+    ]
+  },
+  {
+    "note_id": "P010-W2",
+    "predicted": [
+      "sleep_disturbance"
+    ],
+    "gold": [
+      "sleep_disturbance"
+    ]
+  },
+  {
+    "note_id": "P010-W3",
+    "predicted": [
+      "memory_loss",
+      "sleep_disturbance"
+    ],
+    "gold": [
+      "memory_loss",
+      "sleep_disturbance"
+    ]
+  },
+  {
+    "note_id": "P010-W4",
+    "predicted": [
+      "sleep_disturbance",
+      "wandering"
+    ],
+    "gold": [
+      "sleep_disturbance",
+      "wandering"
+    ]
+  },
+  {
+    "note_id": "P010-W5",
+    "predicted": [
+      "sleep_disturbance"
+    ],
+    "gold": [
+      "sleep_disturbance"
+    ]
+  }
+]
