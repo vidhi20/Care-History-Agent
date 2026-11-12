@@ -47,12 +47,16 @@ Care timeline (per patient, per week, NEW changes highlighted)
 
 ## Results
 
-Run the evaluation yourself and paste the numbers here. Results are saved to `results/metrics_agent.json`.
+Scored on all 50 labeled synthetic notes. Results are saved to `results/`.
 
 | Runner | Symptom recall | Symptom precision | Symptom F1 | New-change F1 | Fully correct (of 50) |
 |---|---|---|---|---|---|
-| Claude agent | _run eval_ | _run eval_ | _run eval_ | _run eval_ | _run eval_ |
 | Keyword baseline | 88% | 100% | 93.6% | 89.2% | 39 |
+| Claude agent | Not scored yet | Not scored yet | Not scored yet | Not scored yet | Not scored yet |
+
+The keyword baseline is the reference point the agent has to beat. Its weakest category is memory loss (76.9% F1), because caregivers describe forgetting in many different ways that fixed keywords miss. That is the gap the Claude agent is built to close.
+
+The Claude agent row needs a paid Anthropic API key to run. Run `python eval/evaluate.py` with a key to fill it in; scores are written to `results/metrics_agent.json`.
 
 ## Run it
 
@@ -67,6 +71,8 @@ python run_demo.py P003                    # print one patient's care timeline
 ```
 
 Set `CLAUDE_MODEL` to choose a different Claude model (default `claude-sonnet-5-5`).
+
+You can also copy `.env.example` to `.env` and put your key there; the agent reads it automatically. If your key belongs to a whole organization rather than one workspace (common with university accounts), also set `ANTHROPIC_WORKSPACE_ID` to your workspace ID from Console > Settings > Workspaces.
 
 ## Project structure
 
