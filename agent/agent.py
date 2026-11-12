@@ -2,6 +2,25 @@
 
 import json
 import os
+from pathlib import Path
+
+
+def _load_env_file():
+    """Read ANTHROPIC_API_KEY and CLAUDE_MODEL from a .env file in the project folder, if present."""
+    env = Path(__file__).resolve().parent.parent / ".env"
+    if not env.exists():
+        return
+    for line in env.read_text(encoding="utf-8-sig").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        value = value.strip().strip('"').strip("'")
+        if value and not os.environ.get(key.strip()):
+            os.environ[key.strip()] = value
+
+
+_load_env_file()
 
 from .history import CareHistory
 from .schema import SYMPTOM_CATEGORIES, TOOLS
@@ -24,6 +43,11 @@ class CareHistoryAgent:
     def __init__(self, model=None, history=None, max_turns=6):
         import anthropic  # imported here so --mock runs need no SDK
 
+        if not os.environ.get("ANTHROPIC_API_KEY") or os.environ["ANTHROPIC_API_KEY"] == "your-key-here":
+            raise SystemExit(
+                "No API key found. Copy .env.example to .env and paste your key after ANTHROPIC_API_KEY=, "
+                "or run: export ANTHROPIC_API_KEY=sk-ant-... (Windows: set ANTHROPIC_API_KEY=sk-ant-...)"
+            )
         self.client = anthropic.Anthropic()
         self.model = model or os.environ.get("CLAUDE_MODEL", "claude-sonnet-5-5")
         self.history = history or CareHistory()
