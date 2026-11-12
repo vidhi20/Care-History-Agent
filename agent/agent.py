@@ -48,7 +48,10 @@ class CareHistoryAgent:
                 "No API key found. Copy .env.example to .env and paste your key after ANTHROPIC_API_KEY=, "
                 "or run: export ANTHROPIC_API_KEY=sk-ant-... (Windows: set ANTHROPIC_API_KEY=sk-ant-...)"
             )
-        self.client = anthropic.Anthropic()
+        # Organization-wide keys also need the workspace to bill (Console > Settings > Workspaces).
+        workspace = os.environ.get("ANTHROPIC_WORKSPACE_ID")
+        headers = {"anthropic-workspace-id": workspace} if workspace else None
+        self.client = anthropic.Anthropic(default_headers=headers)
         self.model = model or os.environ.get("CLAUDE_MODEL", "claude-sonnet-5-5")
         self.history = history or CareHistory()
         self.max_turns = max_turns
